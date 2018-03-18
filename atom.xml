@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Allan Siongco</title>
+  
+  <subtitle>Technology Professionial with EQ</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://arfs.github.io/"/>
+  <updated>2018-03-18T04:23:47.000Z</updated>
+  <id>http://arfs.github.io/</id>
+  
+  <author>
+    <name>Allan Siongco</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>EQ for Better IT</title>
+    <link href="http://arfs.github.io/2018/03/17/eq-for-better-it/"/>
+    <id>http://arfs.github.io/2018/03/17/eq-for-better-it/</id>
+    <published>2018-03-18T00:12:42.000Z</published>
+    <updated>2018-03-18T04:23:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Although there seems to be plenty of IQ in our field, having emotional intelligence, or EQ, is a skill that’s lost by many Information Technology professionals.</p><p>EQ is the level of your ability to understand other people, what motivates them, and how to work cooperatively with them.</p><p>Technology transforms businesses, but <a href="/2017/07/02/why-do-businesses-even-exist/" title="business is inherently a human activity">business is inherently a human activity</a>; value is created by understanding and solving people’s problems.</p><p>If you wanted to leverage technology to create more value and lead your company to higher profitability, wouldn’t you want someone who works as well with people as they do with computers?</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Although there seems to be plenty of IQ in our field, having emotional intelligence, or EQ, is a skill that’s lost by many Information Te
+      
+    
+    </summary>
+    
+    
+      <category term="technology" scheme="http://arfs.github.io/tags/technology/"/>
+    
+      <category term="business" scheme="http://arfs.github.io/tags/business/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First Blog Published on Improving.com!</title>
+    <link href="http://arfs.github.io/2018/03/06/First-blog-published-on-Improving-com/"/>
+    <id>http://arfs.github.io/2018/03/06/First-blog-published-on-Improving-com/</id>
+    <published>2018-03-07T05:44:42.000Z</published>
+    <updated>2018-03-18T00:25:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>A couple of months ago when I started at <a href="http://improving.com/" target="_blank" rel="noopener">Improving</a> in January, I was inspired to write a Medium blog story after hearing some first-time experiences from other consultants. </p><p>I casually posted it in our company #slack channel and it was very well-received. A handful of people expressed to me about how they or someone they knew could relate to it. People loved the writing style and concrete advice and forwarded it to friends they felt should read it.</p><p>Little did I know that it would also be noticed by the marketing team. </p><p>After they emailed me to ask for my permission, it was scheduled for the March newsletter. Fast-forward to now and I am pleased to announce that you can read my first contribution for Improving’s blog:</p><p><a href="http://improving.com/thoughts/mistakes-to-avoid-as-a-first-time-tech-consultant" target="_blank" rel="noopener">Mistakes To Avoid as a First-Time Tech Consultant</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;A couple of months ago when I started at &lt;a href=&quot;http://improving.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Improving&lt;/a&gt; in January, I was i
+      
+    
+    </summary>
+    
+    
+      <category term="career" scheme="http://arfs.github.io/tags/career/"/>
+    
+      <category term="technology" scheme="http://arfs.github.io/tags/technology/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>I Hate Whiteboarding in Tech Interviews</title>
+    <link href="http://arfs.github.io/2017/12/01/i-hate-whiteboarding-in-tech-interviews/"/>
+    <id>http://arfs.github.io/2017/12/01/i-hate-whiteboarding-in-tech-interviews/</id>
+    <published>2017-12-02T04:46:14.000Z</published>
+    <updated>2018-03-18T04:15:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>I was inspired to write this Medium blog story after doing badly during the whiteboarding portion of an interview.</p><p>I didn’t do <em>that</em> bad actually. I still got the job but I I didn’t do as well I expected out of myself.</p><p>It was a good thing that it happened, however, because it made me realize that I had gotten complacent in my software engineering skills as I grew into management and leadership positions at my previous job.</p><p>If you have ever thought that whiteboarding in interviews are stupid, give <a href="https://medium.com/@arfs/i-hate-whiteboarding-in-tech-interviews-6d732d217cf9" target="_blank" rel="noopener">I Hate Whiteboarding In Tech Interviews</a> a read and let me know if it changes your mind.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I was inspired to write this Medium blog story after doing badly during the whiteboarding portion of an interview.&lt;/p&gt;
+&lt;p&gt;I didn’t do &lt;em
+      
+    
+    </summary>
+    
+    
+      <category term="programmming" scheme="http://arfs.github.io/tags/programmming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Learning Complex Skills</title>
+    <link href="http://arfs.github.io/2017/07/20/learning-complex-skills/"/>
+    <id>http://arfs.github.io/2017/07/20/learning-complex-skills/</id>
+    <published>2017-07-21T02:37:05.000Z</published>
+    <updated>2018-03-18T02:47:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Most people have trouble acquiring new complex skills (such as playing tennis, coding, networking, presenting, etc.) because </p><ol><li>they don’t understand that complex skills are really a collection of simple skills performed in a certain manner and…</li><li>it must be practiced repeatedly to make it look easy and natural (internalization)</li></ol><p>A common mistake people make is to try to learn a complex skill as if it’s just one single skill. Through a lot trial and error, it is possible to reach a certain level of competence this way, but I would argue that this common approach introduces a few critical problems.</p><h1 id="Problems-with-the-common-approach"><a href="#Problems-with-the-common-approach" class="headerlink" title="Problems with the common approach"></a>Problems with the common approach</h1><p>The first is that the common approach can take much longer than necessary. For example, many people learn to play tennis simply by going out to the court with friends and try to keep a rally going. If you’ve ever watched casual players do this you would know that it’s not very successful.</p><p>Second is that even if you managed to reach some level of competence with the “trial by fire” approach, the focus would have been on trying to produce “quick” results rather than mastery of fundamentals. Although it is possible to look like you are producing results very quickly on the first part of the learning curve, you are most likely hindering long-term growth by unknowingly having gaps in fundamental knowledge.</p><h1 id="Progressions"><a href="#Progressions" class="headerlink" title="Progressions"></a>Progressions</h1><p>As I mentioned before, complex skills are really a collection of simple skills. A good coach (or a good self-learner) is able to deconstruct these complex skills into simple skills and plan a good sequence of progressions for learning. </p><p>For example, an adult can learn how to ride simply by going out there and immediately trying to pedal on the street and falling repeatedly until they finally get it.</p><p>Or they can take a less painful (and a more effective) approach and learn it through a series of progressions. It can look something like this:</p><ul><li>find a grassy area that has a very slight decline so that a bike can roll downhill</li><li>remove pedals so that it’s not in the way, and try to roll down hill very slowly by inching your feet off the ground just a tad. if you lose balance, just put your feet back down</li><li>as you start to “get” the feel of how the bike starts self-balancing when it’s rolling, try to keep your feet off the ground longer and longer and roll downhill without touching</li><li>as you get better at balancing, switch from a grassy decline to a concrete decline and practice feeling out the balance more</li><li>one you reach a certain level of confidence in your ability to feel the balance, put the pedals back on and attempt to roll down hill with the feet on your pedals (but not pedaling yet)</li><li>after you’re able to keep your balance indefinitely with the feet on the pedals, slowly start moving the pedals with your feet</li><li>etc…</li></ul><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>As you can see from above, the complex skill of learning how to ride a bike has been broken down into more manageable skill progressions.</p><p>Not only is it less overwhelming, but it is actually more effective in that allows a person to master fundamental layers individually so that in creates a strong foundation for long-term growth.</p><p>Most people don’t bother with trying to learn with this approach. The human mind is inherently lazy after all, and it takes some thought via problem solving and planning (or finding/paying for a mentor) to learn in this manner.</p><p>However if you can get over the obstacle of “learning how to learn”, it establishes a framework for learning other complex skills that can open many opportunities.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Most people have trouble acquiring new complex skills (such as playing tennis, coding, networking, presenting, etc.) because &lt;/p&gt;
+&lt;ol&gt;
+&lt;l
+      
+    
+    </summary>
+    
+    
+      <category term="personal development" scheme="http://arfs.github.io/tags/personal-development/"/>
+    
+      <category term="metalearning" scheme="http://arfs.github.io/tags/metalearning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Why Do Businesses Even Exist?</title>
+    <link href="http://arfs.github.io/2017/07/02/why-do-businesses-even-exist/"/>
+    <id>http://arfs.github.io/2017/07/02/why-do-businesses-even-exist/</id>
+    <published>2017-07-02T05:00:13.000Z</published>
+    <updated>2018-03-18T03:29:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Core-Drives"><a href="#Core-Drives" class="headerlink" title="Core Drives"></a>Core Drives</h1><p>For whatever reason, we exist; and during that existence we have core human drives. We are born with simple and essential ones, such as the need to survive. Out of that comes the need for air, water, and food. As our essential drives are fulfilled and our minds mature, we have the need to fulfill more sophisticated, higher-level drives. We then pursue things such as the need for relatedness, growth, and importance.</p><h1 id="Problems-and-Solutions"><a href="#Problems-and-Solutions" class="headerlink" title="Problems and Solutions"></a>Problems and Solutions</h1><p>As you can imagine, those core human drives pose problems for us in our day-to-day lives. For example if our core human drive to survive gives us the problem of hunger, we have to craft a solution in order to fulfill that drive. If we have the desire, time, and resources then our solution can be to obtain the knowledge on how to produce our own food.</p><p>However, time is a finite resource and taking the time to obtain the knowledge to fulfill every drive we have is not a practical solution for most people. In the old days, we obtained solutions from other people by bartering. Nowadays, solutions to our problems can be bought from other people.</p><h1 id="Value"><a href="#Value" class="headerlink" title="Value"></a>Value</h1><p>Our existence gives us core human drives and those drives produce problems that we have to seek solutions for. Since knowledge takes time to obtain and time is finite, we find value in obtaining solutions created by other people. In order to buy solutions, there has to be people creating value and offering them in exchange for currency.</p><h1 id="Businesses"><a href="#Businesses" class="headerlink" title="Businesses"></a>Businesses</h1><p>Businesses are a collection of people creating solutions we find valuable. They deliver it in the form of products and services in exchange for currency.</p><p>Therefore, businesses exist for two reasons:</p><ol><li>to solve problems caused by our core human drives</li><li>ironically enough, to solve the problem of the owner’s own drive to pursue the need for relatedness, growth, and importance.</li></ol><p>Successful businesses are a collection of people proficient in reverse engineering particular inner workings of the human mind.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Core-Drives&quot;&gt;&lt;a href=&quot;#Core-Drives&quot; class=&quot;headerlink&quot; title=&quot;Core Drives&quot;&gt;&lt;/a&gt;Core Drives&lt;/h1&gt;&lt;p&gt;For whatever reason, we exist; and
+      
+    
+    </summary>
+    
+    
+      <category term="business" scheme="http://arfs.github.io/tags/business/"/>
+    
+  </entry>
+  
+</feed>
