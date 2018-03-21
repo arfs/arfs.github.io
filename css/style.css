@@ -462,8 +462,8 @@ body {
   -webkit-hyphens: auto;
   hyphens: auto;
   font-family: Georgia;
-  font-size: 1.1rem;
-  line-height: 1.6em;
+  font-size: 1.2rem;
+  line-height: 1.7em;
 }
 .content pre,
 .content code {
@@ -536,6 +536,10 @@ body {
   max-width: 46rem;
 }
 @media (max-width: 480px) {
+  .content p {
+    font-size: 1.1rem;
+    line-height: 1.6em;
+  }
   .px3 {
     padding-left: 1rem;
     padding-right: 1rem;
