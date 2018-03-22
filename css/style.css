@@ -457,13 +457,26 @@ body {
   flex: 1;
 }
 .content p {
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
   font-family: Georgia;
   font-size: 1.2rem;
   line-height: 1.7em;
+}
+.content hr {
+  border: 0;
+  font-size: 1rem;
+  margin-top: 52px;
+  margin-bottom: 26px;
+  text-align: center;
+  overflow: visible;
+}
+.content hr:before {
+  content: '...';
+  display: inline-block;
+  font-style: italic;
+  letter-spacing: 0.6em;
+  margin-left: 0.6em;
+  position: relative;
+  top: -30px;
 }
 .content pre,
 .content code {
