@@ -1115,22 +1115,23 @@ article .content .video-container embed {
 }
 article .content blockquote {
   background: inherit;
-  color: #ccffb6;
-  border-left: 0px solid #ccc;
+  color: #000;
+  border-left: 1px solid #000;
   margin: 1rem 10px;
   padding: 0.5em 10px;
   quotes: "\201C" "\201D" "\2018" "\2019";
+/*
+        &:before
+            color: #ccffb6;
+            content: "\201C";
+            font-size: 2em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em
+        */
 }
 article .content blockquote p {
   margin: 0;
-}
-article .content blockquote:before {
-  color: #ccffb6;
-  content: "\201C";
-  font-size: 2em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
 }
 article .content blockquote footer {
   color: #666;
