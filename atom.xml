@@ -118,11 +118,11 @@
     
       <category term="career" scheme="http://arfs.github.io/tags/career/"/>
     
+      <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
+    
       <category term="management" scheme="http://arfs.github.io/tags/management/"/>
     
       <category term="leadership" scheme="http://arfs.github.io/tags/leadership/"/>
-    
-      <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
     
   </entry>
   
@@ -148,9 +148,9 @@
       <category term="technology" scheme="http://arfs.github.io/categories/technology/"/>
     
     
-      <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
-    
       <category term="technology" scheme="http://arfs.github.io/tags/technology/"/>
+    
+      <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
     
       <category term="business" scheme="http://arfs.github.io/tags/business/"/>
     
