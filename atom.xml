@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://arfs.github.io/"/>
-  <updated>2018-11-08T03:59:17.000Z</updated>
+  <updated>2019-07-17T15:04:38.000Z</updated>
   <id>http://arfs.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Junior Devs, Stop Doing Only What You’re Told to Do</title>
+    <link href="http://arfs.github.io/2019/04/11/junior-devs-stop-doing-only-what-you%E2%80%99re-told-to-do/"/>
+    <id>http://arfs.github.io/2019/04/11/junior-devs-stop-doing-only-what-you’re-told-to-do/</id>
+    <published>2019-04-11T14:57:58.000Z</published>
+    <updated>2019-07-17T15:04:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/images/new-product.jpg"><p>First of all to clarify, following instructions is a prerequisite to being recognized as a good employee. I am not trying to imply junior devs should start an anarchy, do whatever they want, and scream hashtag YOLO.</p><p>However a lot of times, entry-level and junior devs make the mistake of doing ONLY and exactly what they are told to do. The reason it’s a problem is because the person giving direction, whether it be a lead dev or a project/product manager, is usually only in the idea phase when they thought of the requirements. Sure, they may have spent a lot of time planning as best as they could but the idea still hasn’t been put into practice.</p><h1 id="Punched-in-the-Mouth"><a href="#Punched-in-the-Mouth" class="headerlink" title="Punched in the Mouth"></a>Punched in the Mouth</h1><p>Mike Tyson famously said “everyone has a plan until they get punched in the mouth” and this definitely rings true even in creating software.</p><p>As the developer implementing the idea, you have the experience of figuratively getting punched in the mouth. You are the first in line for putting a plan into practice.</p><p>Often, the person giving direction will not be able to anticipate all the issues that may come up as the idea gets fleshed out into a real, working product. As a junior dev, doing only exactly what you’re told without regard for whether the requirements make sense or not will result in unnecessary churn the further along the project goes in the software development life cycle.</p><h1 id="Why-should-you-care"><a href="#Why-should-you-care" class="headerlink" title="Why should you care?"></a>Why should you care?</h1><p>Well for one, the longer a project takes than necessary, the worse it looks for everyone including the dev who worked on it. Also if following instructions is a prerequisite to being considered a good employee, making someone’s life easier and anticipating their problems is a prerequisite to being considered a GREAT employee.</p><p>If you’re proactive in identifying issues that come up during implementation and start a conversation about them, it will do wonders in making everyone’s lives easier. And of course, being part of several projects that go better than expected will bode well for your career.</p><p>Note however that this does not mean you should take matters into your own hands. Rather, the aim is to bring awareness to things that couldn’t have possibly been anticipated during the idea phase. Additionally, opposing ideas in particular still have to be communicated with tact.</p><p>Here are common issues you can look out for when ideas are turned into practice:</p><ul><li>user interface/workflow/design requirements that ends up being a terrible experience for the user</li><li>requirements that end up making the product very slow</li><li>requirements that end up being very difficult and/or time-consuming to implement</li><li>requirements that seem different from what you originally heard about</li></ul><p>If you want to stand out from the crowd, don’t do only and exactly what you’re told to do. After all, there are plenty of people that can do that and for much less than you’re getting paid.</p><p>But there are fewer that can go above and beyond to anticipate problems, think outside the box, and make everyone’s lives easier. Those are the type of devs that companies want to hire and reward to stay around.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;img src=&quot;/images/new-product.jpg&quot;&gt;
+&lt;p&gt;First of all to clarify, following instructions is a prerequisite to being recognized as a good emplo
+      
+    
+    </summary>
+    
+      <category term="technology" scheme="http://arfs.github.io/categories/technology/"/>
+    
+    
+      <category term="career" scheme="http://arfs.github.io/tags/career/"/>
+    
+      <category term="leadership" scheme="http://arfs.github.io/tags/leadership/"/>
+    
+  </entry>
   
   <entry>
     <title>Thoughts on Challenge #2</title>
@@ -90,11 +118,11 @@
     
       <category term="career" scheme="http://arfs.github.io/tags/career/"/>
     
-      <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
-    
       <category term="management" scheme="http://arfs.github.io/tags/management/"/>
     
       <category term="leadership" scheme="http://arfs.github.io/tags/leadership/"/>
+    
+      <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
     
   </entry>
   
@@ -120,9 +148,9 @@
       <category term="technology" scheme="http://arfs.github.io/categories/technology/"/>
     
     
-      <category term="technology" scheme="http://arfs.github.io/tags/technology/"/>
-    
       <category term="EQ" scheme="http://arfs.github.io/tags/eq/"/>
+    
+      <category term="technology" scheme="http://arfs.github.io/tags/technology/"/>
     
       <category term="business" scheme="http://arfs.github.io/tags/business/"/>
     
