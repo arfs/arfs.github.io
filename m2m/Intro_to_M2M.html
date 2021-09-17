@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Intro to M2M</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.min.css" integrity="sha512-WFGU7IgfYR0dq5aORzbD+NApAXdExNZFb7LaoO8olYImBW/iZxAwjKEuT+oYcFR6gOd+DAFssq/icMn8YVbQxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/solarized.min.css" integrity="sha512-sUF1FAUpi9yPXCDOPsRwzh71zrCVkcT4SfwxBlQeHwMbH1aTGcSdI00GRLaH6iXRSBTazGH/u6sGQTc1tGqofg==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						# Intro to M2M
+					
+						---
+
+						## What is the M2M project?
+
+						A custom platform built for JPMC to do automated email marketing.
+
+						---						
+						
+						## What is marketing?
+
+						---
+
+						Marketing is the process of getting people interested in your company's product or service.
+
+						---
+							
+						## Traditional Marketing
+
+						- billboards
+						- radio/tv ads
+						- snail mail
+
+						---
+
+						## Digital Marketing
+
+						- social media
+						- website content
+						- omnichannel marketing (email, SMS, etc.)
+						
+						---
+
+						Mentioned earlier, M2M is focused on automated email marketing.
+
+						---
+
+						## Manual Email Marketing
+						But first, let's explore the world of manual email marketing.
+
+						---
+
+						### Scenario: You created an awesome alcoholic beverage.
+						You want to tell people about it via email. 
+
+						What do you need to have in order to do this?
+
+						---
+
+						### First things first: Get list of emails
+
+						How do you get a list of emails to begin with?
+
+						---
+
+						### Ways to get emails
+
+						- collect it yourself
+						- pay someone to give you a list
+
+						assemble it in a spreadsheet or something
+
+						---
+
+						### Next up: Send an email blast to everyone
+
+						But... what problems might you run into when you do this?
+
+						---
+
+						### Problems
+
+						- people not qualified for your product might get an email about it
+							- non-drinkers
+							- underage
+						- someone might report you as spam
+						- might get complaint about soliciting minors!
+
+						How to solve those problems?
+
+						---
+
+						### Solutions
+
+						- supplement your email list with data about the customer (age and drinking status)
+						- for next email blast, use that new data to hand pick only qualified customers (older than 21 and a drinker)
+
+
+						---
+
+						BTW... hand picking those customers is what you call creating a segment or audience
+
+						(aka segmentation, targeting, etc.)
+
+						---
+
+						### Another problem
+
+						- people are more likely to respond to an email if it seems like it's just for them
+						- what are problems with trying to personalize emails manually?
+
+						---
+
+						### What Next? Track those emails
+
+						Why would we track them? 
+
+						---
+
+						Reminder: goal of the emails is to eventually land a sale of your product
+
+						---
+
+						### Manually tracking email activity
+
+						- respond to people who actually email you back (aka engaging)
+						- follow up with them after a certain amount of time 
+						- remove people who say they don't want your email! (aka opting out)
+
+						Problems with doing all this manually?
+
+						---
+						
+						### Making sense of all the activity
+						
+						If you want to be smart about it, you might want to prepare a report to analyze trends with your emails.
+						
+						---
+
+						### Email Marketing Phases
+						1. Collect customer data 
+						2. Use the data to create an audience
+						3. Prepare an email list
+						4. Send the emails
+						5. Track email activity
+						6. Generate reports for activity data
+
+						---
+
+						The 6 phases are the foundation of all automated email marketing solutions including M2M project.
+
+						---
+
+						# Automated Email Marketing
+
+						---
+
+						## Collect customer data
+
+						companies collect data about customers every chance they can get
+
+						- sign up forms
+						- website/app/email tracking
+						- surveys
+						
+						---
+						
+						Data is eventually compiled to a feed 
+
+						(more on this later)
+
+						---
+
+						## Use the data to create an audience
+
+						Data is loaded up in one or more databases. Platform has friendly user interface that allows you to get a list of customers that match a criteria (querying, segmentation, targeting).
+
+						---
+
+						## Preparing the email list
+
+						After segmentation, there's additional work to be done
+						- deduplication
+						- exclude customers for various factors
+							- customers who no longer want to receive emails
+							- customers who have received an email already
+							- etc
+							
+						---
+
+						## Send the emails
+
+						Platforms usually have a mechanism for actually delivering the emails with a specific template that can also populate placeholders to personalize the email.
+
+						---
+
+						## Track email activity
+
+						Platforms also have the ability to track various statistics about the emails that were sent
+						- were they successfully delivered?
+						- were they opened?
+						- how many failed?
+						- etc. 
+
+						---
+
+						## Generate reports for activity data
+
+						All that data would be useless if there was no way to review them via reports. Making sense of the data could be used to improve engagement with the emails.
+
+
+						---
+
+						# Back to M2M Project
+
+						This is how the different modules of the M2M project fit into the 6 phases we just discussed.
+
+						---
+
+						||Phase|Module|
+						|-|-|-|
+						|1|Collect customer data|M2M: Customer Data ETLs|
+						|2|Use the data to create an audience|M2M UI|
+						|3|Prepare an email list|M2M: Decision Management|
+
+						---
+
+						||Phase|Module|
+						|-|-|-|
+						|4|Send the emails|PCM: Deployments|
+						|5|Track email activity|PCM: Activity Data|
+						|6|Generate reports for activity data|M2M: Reporting|
+						
+						---
+
+						M2M is built on top of PeopleCloud Messaging (PCM), formerly known as Harmony.
+						
+						Note: Can mention that PCM is an Email Service Provider (ESP).
+						
+						---
+
+						## What did we learn?
+
+						- What the M2M project is
+						- Recap of marketing strategies and why we market
+						- Phases of email marketing
+						- How M2M modules fit into those phases	
+
+						---
+						
+						## Questions?
+					</textarea>
+				</section>				
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js" integrity="sha512-46BlbGDQDy4ki38kj1yCeCSSQXyyZUHsqDX02+RZaTYdrJL+Sqr6TGrwlSP8soII5Dk4SZDb2bDRcmcyHmYAvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/notes/notes.min.js" integrity="sha512-yXOjsMbgGf4hR0LU+GpyMvCxK0cQ4oYEwBbW0DTVW+hFsMmuN86J60roDyj5ge9b9xLpzV7YLVVBpYh3eoPBJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/markdown/markdown.min.js" integrity="sha512-VMIcHSU7cVYRxUYr9l/t/iRO98QUfuTw8inT0mFklWb6HhKwLkjA0F24O42RL39RKGenNEK/TlEWB2NEy8w4Ng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/highlight.min.js" integrity="sha512-NVdqCvsrfhXUYzGTEGGBFf5jxheVVcglfdvO8r+WdG0BKMrRYvaiCGIC0S+wf4hkE3Xq43gTd1k3Mwl/UNgdvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.1/mermaid.min.js" integrity="sha512-08D1plquyGkiMn9uWbY5ZgCrfpZo5hZ6Ab89VPOCZ8zGkPU428uaUDAAqYjCMrbz2ECFG/VR8v470aY9CiB1HA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<!--
+		-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, /*RevealHighlight,*/ RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

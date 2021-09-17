@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>M2M: Customer Data ETLs</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.min.css" integrity="sha512-WFGU7IgfYR0dq5aORzbD+NApAXdExNZFb7LaoO8olYImBW/iZxAwjKEuT+oYcFR6gOd+DAFssq/icMn8YVbQxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/solarized.min.css" integrity="sha512-sUF1FAUpi9yPXCDOPsRwzh71zrCVkcT4SfwxBlQeHwMbH1aTGcSdI00GRLaH6iXRSBTazGH/u6sGQTc1tGqofg==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+                    # Customer Data ETL
+
+                    ---
+
+                    M2M's implementation for the first phase of email marketing
+
+                    | | | |
+                    |-|-|-|
+                    |**1**|**Collect customer data**|**Customer Data ETLs**|
+                    |2|Use the data to create an audience|M2M UI|
+                    |3|Prepare an email list|Decision Management Engine|
+
+                    ---
+
+                    We collect data about customers so we can later use the data to target  a specific audience.
+
+                    ---
+
+                    ## Data feeds
+
+                    Collected data is later compiled to one or more feeds which then allows other systems to received updated data, delivered on a recurring basis (daily, weekly, etc.)
+
+                    ![](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcbiAgICBjZChDdXN0b21lciBEYXRhKSAtLT58Y29tcGlsZWQgdG98IGZmKEZlZWQgRmlsZSlcbiAgICBmZiAtLT58ZGVsaXZlcmVkIHRvfCBNMk0iLCJtZXJtYWlkIjp7InRoZW1lIjoibmV1dHJhbCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlLCJhdXRvU3luYyI6dHJ1ZSwidXBkYXRlRGlhZ3JhbSI6ZmFsc2V9)
+
+                    ---
+
+                    ### Feed File 
+
+                    Usually some plain text format.  
+                    Examples: JSON, XML, delimited file
+
+                    ```
+                    ECI,EMAIL
+                    1111,customer1111@gmail.com
+                    2222,customer2222@hotmail.com
+                    3333,customer3333@yahoo.com
+                    ```
+                    <small>sample feed file with 3 records in CSV format</small>
+
+                    ---
+
+                    ### Problem
+
+                    An automated email marketing platform *could* use the feed file directly.
+
+                    But as the number of customers get larger, what's wrong with working off a large CSV file? 
+
+                    ---
+
+                    #### Extract, Transform, Load (ETL) 
+
+                    General procedure of copying data from one or more sources into a destination system which represents the data differently from the source
+
+
+                    ---
+
+                    #### M2M ETL summary
+
+                    ![](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcbiAgICBkZWxpbWl0ZWQoRGVsaW1pdGVkIEZpbGUpIC0tPnxFVEx8IGRiX3RhYmxlKERhdGFiYXNlIFRhYmxlKVxuIiwibWVybWFpZCI6eyJ0aGVtZSI6Im5ldXRyYWwifSwidXBkYXRlRWRpdG9yIjpmYWxzZSwiYXV0b1N5bmMiOnRydWUsInVwZGF0ZURpYWdyYW0iOmZhbHNlfQ)
+
+                    - create database table with number of columns that matches CSV one-to-one
+                    - attempt to copy each record into the database table
+                    - prune out invalid data while we're at it
+
+                    <small>Result: allows us to query the data faster for targeting</small>
+
+                    ---
+
+                    ### Another Problem
+
+                    What happens when we get a feed file with more or less columns that we expected from last time?
+
+                    ---
+
+                    #### Solution 
+
+                    We have to update our database table to match the new number of columns
+
+                    ---
+
+                    ### Oh no, more problems
+
+                    What happens if any given time, we get different versions of the feed file? 
+
+                    And the number of columns can be vary among the versions? 
+
+                    ---
+
+                    #### Solution 
+
+                     we have to come up with a system where we can
+                     
+                    - determine what version of the feed file we're getting
+                    - create the right version of our database table with the right amount of columns
+                    - and the column data in the same order to match the feed file
+
+                    ---
+
+                    ### Feed Versions
+
+                    - problem we had to solve for Chase
+                    - more on this in detail later
+
+                    ---
+
+                    ### Bad data
+
+                    What are different ways we can handle bad data?
+
+                    ```
+                    ECI,EMAIL,DAYS_ENROLLED
+                    1111,customer1111@gmail.com,abc
+                    2222,bad3ma1l,5
+                    invalid_customer_id,customer3333@yahoo.com,10
+                    ```
+
+                    ---
+
+                    #### Error handling strategies
+
+                    - zero out a column value
+                    - null out a column value
+                    - reject entire row
+                    - reject the entire feed 
+
+                    ```
+                    ECI,EMAIL,DAYS_ENROLLED
+                    1111,customer1111@gmail.com,abc
+                    2222,bad3ma1l,5
+                    invalid_customer_id,customer3333@yahoo.com,10
+                    ```
+
+                    Note:
+                    Explain how we reject based on % diff from previous file. 
+                    If a feed file looks drastically different from a previous day, most likely something is wrong.
+                    ---
+
+                    ## Customer data feed files
+
+                    |feed name|recurrence|
+                    |-|-|
+                    |target_customer|weekly|
+                    |target_product|daily|
+                    |personal_customer|daily|
+                    |personal_product|daily|
+
+                    <small>*daily means weekdays only</small>
+
+                    ---
+
+                    ### target_customer
+
+                    Contains non personally identifiable information (PII) about a customer's behavior and other attributes about them with respect to Chase.
+
+                    ---
+
+                    It contains data such as:
+
+                    - how many times a customer has logged in the last 90 days
+                    - what their credit card status is
+                    - whether or not they have bill pay enabled
+                    - their enterprise customer identifier (ECI)
+                    - much, much more...
+
+                    ---
+
+                    #### Enterprise Customer Identifier
+
+                    Unique identifier for a single customer. Used in every feed file Chase delivers to us to tie in and reference the same customer.
+
+                    ---
+
+                    ### target_product
+
+                    Contains non PII about which Chase products/services a customer is enrolled to.
+
+                    ---
+
+                    Chase has several products/services distributed over many Lines of Businesses (LOB). 
+
+                    |Line of Business|Product Name|
+                    |-|-|
+                    |Card|Chase Sapphire|
+                    |Auto| Chase Auto Loan / Lease|
+                    |Mortgage| Chase Home Lending|
+                    |Retail|Chase Merchant Services|
+
+                    Note: M2M email campaigns are focused primarily on these four LOBs
+
+                    ---
+
+                    For each product a customer is enrolled to, there's also data such as:
+
+                    - how long they have been enrolled to that product
+                    - where or not paperless statements are enabled
+                    - a bunch of other fields/values whose meaning is only known to Chase
+
+                    Note: 
+                    Explain how many of the columns in a feed file are probably intentionally obfuscated so it cannot be easily determined what the data represents.
+
+                    ---
+
+                    ### personal_customer
+
+                    Contains **PII** about the customer which are typically used to personalize emails sent to them.
+
+                    - first and last name
+                    - email address
+                    - language preferences
+                    - etc.
+
+                    ---
+
+                    ### personal_product
+
+                    Contains **PII** about the products that the customer are enrolled to which are also typically used to personalize sent to them.
+
+                    - reward points balance
+                    - last 4 digits of their account number
+                    - credit limit
+                    - etc.
+
+                    ---
+
+                    ## What did we learn?
+
+                    - Customer Data ETL is M2M's implementation the first phase of email marketing
+                    - Data feeds and problems associated with performing ETL on them
+                    - The four core customer data feed files M2M uses for targeting and email personalization
+
+                    ---
+
+                    ## Questions?
+				</section>				
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js" integrity="sha512-46BlbGDQDy4ki38kj1yCeCSSQXyyZUHsqDX02+RZaTYdrJL+Sqr6TGrwlSP8soII5Dk4SZDb2bDRcmcyHmYAvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/notes/notes.min.js" integrity="sha512-yXOjsMbgGf4hR0LU+GpyMvCxK0cQ4oYEwBbW0DTVW+hFsMmuN86J60roDyj5ge9b9xLpzV7YLVVBpYh3eoPBJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/markdown/markdown.min.js" integrity="sha512-VMIcHSU7cVYRxUYr9l/t/iRO98QUfuTw8inT0mFklWb6HhKwLkjA0F24O42RL39RKGenNEK/TlEWB2NEy8w4Ng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/highlight.min.js" integrity="sha512-NVdqCvsrfhXUYzGTEGGBFf5jxheVVcglfdvO8r+WdG0BKMrRYvaiCGIC0S+wf4hkE3Xq43gTd1k3Mwl/UNgdvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+		</script>
+	</body>
+</html>
