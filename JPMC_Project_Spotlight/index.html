@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>JPMC Project Spotlight</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.min.css" integrity="sha512-WFGU7IgfYR0dq5aORzbD+NApAXdExNZFb7LaoO8olYImBW/iZxAwjKEuT+oYcFR6gOd+DAFssq/icMn8YVbQxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/solarized.min.css" integrity="sha512-sUF1FAUpi9yPXCDOPsRwzh71zrCVkcT4SfwxBlQeHwMbH1aTGcSdI00GRLaH6iXRSBTazGH/u6sGQTc1tGqofg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/white.min.css" integrity="sha512-RoEy1xOWgzryoplQ1g0eNHizP2BRqEq8eLGpRyI6OvM2FvmxpUyiPotvW4rp/I67VN6eFq4DDXQNcFKbNZ5Rrg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+                        # JPMC Project Spotlight
+
+                        ---
+
+                        ## About JPMC
+
+                        JPMorgan Chase & Co. is an American multinational investment bank and financial services holding company. 
+
+                        They are one of America’s “Big Four” banks along with Bank of America, Citigroup, and Wells Fargo.
+
+                        ---
+
+                        ## Multiple Platforms and Problems
+
+                        JPMC was performing all of their automated email marketing using a mix of platforms:
+
+                        - Acxiom *(customer service)*
+                        - RocketFuel *(analytics)*
+                        - Xeta *(email service)*
+                        - Mercury 1.0 *(segmentation)*
+
+                        ---
+
+                        Because the platforms were not well-integrated, JPMC faced a variety of issues such as 
+
+                        - manual processes with multiple steps and hand-offs
+                        - limited insight and control
+                        - compliance and stability issues
+
+                        ---
+
+                        ## M2M Platform
+
+                        Epsilon built a custom-built automated email marketing platform called Mercury 2.0 (also known as M2M ). 
+
+                        M2M integrated all functionality from multiple services into one platform and addressed all issues JPMC were experiencing.
+
+                        ---
+
+                        ### Self-Service Platform
+
+                        M2M  allows JPMC users to define ad-hoc email deployment themselves, without needing assistance from Epsilon to configure a new segmentation workflow. 
+
+                        ---
+
+                        JPMC uses the M2M web application to create a "Touch" which defines
+
+                        1. what email to send  *(creative)*
+                        2. who to send it to *(segmentation)*
+                        3. when to send it *(deployment schedule)*
+                        4. how many to send *(governance)*
+                        5. what order to send it *(priority)*
+
+                        ---
+
+                        ## Project Highlights
+
+                        ---
+
+                        #### Email Preview
+
+                        Preview with personalization data. Addresses quality issues.
+
+                        <img src="email_preview.png" width="500" />
+
+                        ---
+
+                        #### Ad-hoc Segmentation
+
+                        <img src="ad-hoc_segmentation.png" width="600" />
+
+                        ---
+
+                        #### Predefined Segmentation Rules
+
+                        ![](predefined_segmentation.png)
+
+
+                        Some suppressions can be selected/deselected.
+
+                        However, some suppressions are always executed for each Touch.
+
+                        ---
+
+                        ##### Governance Rules
+
+                        Defines the limits on how many emails can be sent to a customer in a given time frame. 
+
+                        ![](governance.png)
+
+                        Addresses compliance issues. Enforced through suppression rules.
+
+                        ---
+
+                        #### Segmentation Sequence
+
+                        ![](segmentation_sequence.png)
+
+                        ---
+
+                        #### All segmentation rules
+
+                        ![](all_segmentation_rules.png)
+
+                        ---
+
+                        #### Touch Priority
+
+                        Each Touch is assigned a score based on its settings. 
+                        Example: marketing vs servicing emails
+
+                        ![](touch_priority.png)
+                        Higher scores get deployed first before other emails.
+
+                        ---
+
+                        #### Detailed segmentation details
+
+                        ![](segmentation_details.png)
+
+                        Gives JPMC very detailed insight on how the final audience was determined for each email.
+
+                        ---
+
+                        ### Questions?
+
+                    </textarea>
+				</section>				
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js" integrity="sha512-46BlbGDQDy4ki38kj1yCeCSSQXyyZUHsqDX02+RZaTYdrJL+Sqr6TGrwlSP8soII5Dk4SZDb2bDRcmcyHmYAvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/notes/notes.min.js" integrity="sha512-yXOjsMbgGf4hR0LU+GpyMvCxK0cQ4oYEwBbW0DTVW+hFsMmuN86J60roDyj5ge9b9xLpzV7YLVVBpYh3eoPBJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/markdown/markdown.min.js" integrity="sha512-VMIcHSU7cVYRxUYr9l/t/iRO98QUfuTw8inT0mFklWb6HhKwLkjA0F24O42RL39RKGenNEK/TlEWB2NEy8w4Ng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/highlight/highlight.min.js" integrity="sha512-NVdqCvsrfhXUYzGTEGGBFf5jxheVVcglfdvO8r+WdG0BKMrRYvaiCGIC0S+wf4hkE3Xq43gTd1k3Mwl/UNgdvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.12.1/mermaid.min.js" integrity="sha512-08D1plquyGkiMn9uWbY5ZgCrfpZo5hZ6Ab89VPOCZ8zGkPU428uaUDAAqYjCMrbz2ECFG/VR8v470aY9CiB1HA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<!--
+		-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, /*RevealHighlight,*/ RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
