@@ -43,7 +43,18 @@ def.gif,dog.gif
                 var columns = row.split(',');
                 var search = columns[0];
 
+                // escape special characters that mean something in RegEx
+                search = search.replace(/\^/g, '\\^');
                 search = search.replace(/\./g, '\\.');
+                search = search.replace(/\?/g, '\\?');
+                search = search.replace(/\*/g, '\\*');
+                search = search.replace(/\+/g, '\\+');
+                search = search.replace(/\[/g, '\\[');
+                search = search.replace(/\]/g, '\\]');
+                search = search.replace(/\{/g, '\\{');
+                search = search.replace(/\}/g, '\\}');
+                search = search.replace(/\\/g, '\\\\');
+                search = search.replace(/\$/g, '\\$');
 
                 var searchRe = new RegExp(search, 'g');
                 var replace = columns[1];
