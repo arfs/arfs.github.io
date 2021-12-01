@@ -34,18 +34,23 @@ def.gif,dog.gif
         var $replacedText = $('#replaced-text');
 
         $('#replace-text-button').click(function() {
-            var items = $findReplaceItems.html().split('\n');
+            var items = $findReplaceItems.val().split('\n');
             var newReplacedText = $sourceText.val();
 
             items.forEach(function(row) {
                 if(!row.trim()) {return; }
 
                 var columns = row.split(',');
-                var search = new RegExp(columns[0], 'g');
+                var search = columns[0];
+
+                search = search.replace(/\./g, '\\.');
+
+                var searchRe = new RegExp(search, 'g');
                 var replace = columns[1];
 
-                console.log(search, replace);
-                newReplacedText = newReplacedText.replace(search, replace);
+
+                console.log(searchRe, replace);
+                newReplacedText = newReplacedText.replace(searchRe, replace);
             });
 
             $replacedText.val(newReplacedText);
